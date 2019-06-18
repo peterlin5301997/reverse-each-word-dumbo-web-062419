@@ -3,7 +3,7 @@ def reverse_each_word(phrase)
   reversed = ""
   array.each do |word|
     reversed += word.reverse
-    if word != word.last
+    if word != word[-1]
       reversed += " "
     end
   end
