@@ -3,6 +3,9 @@ def reverse_each_word(phrase)
   reversed = ""
   array.each do |word|
     reversed += word.reverse
+    if word != word.last
+      reversed += " "
+    end
   end
   return reversed
 end
